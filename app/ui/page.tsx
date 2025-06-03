@@ -48,7 +48,7 @@ export function DoneButton({ labelName }: { labelName?: string }) {
 
 export function FlexRow({ children }: { children: React.ReactNode }) {
     return (
-        <div className="flex flex-row flex-wrap w-full gap-2 border-[6px] px-4 py-8 border-white rounded-lg shadow-lg bg-slate-100">
+        <div className="flex flex-row flex-wrap w-full gap-16 border-[6px] px-4 py-8 border-white rounded-lg shadow-lg bg-slate-100">
             {children}
         </div>
     )
