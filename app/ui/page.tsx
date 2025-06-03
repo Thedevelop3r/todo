@@ -1,3 +1,7 @@
+import Breadcrumbs from '@/components/BreadCrumbs'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
 
 
 
@@ -260,6 +264,9 @@ export default function UI() {
     return (
         // Main Ui Page Container
         <div className='w-full px-2 py-28 flex flex-col items-start justify-start gap-4 min-h-screen bg-slate-200'>
+            <Navbar />
+            <Sidebar />
+            <Breadcrumbs />
             {/* Buttons */}
             <Title title="Buttons" />
             <FlexRow>
@@ -283,6 +290,7 @@ export default function UI() {
             <FlexRow>
                <StyledRadioButtons />
             </FlexRow>
+            <Footer />
         </div>
     )
 }
