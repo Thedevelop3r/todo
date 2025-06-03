@@ -37,7 +37,7 @@ export default function SignIn() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-white p-4">
+        <div className="min-h-screen flex items-center justify-center bg-slate-200 p-4">
             <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
                 <h1 className="text-2xl font-semibold text-center text-blue-600 mb-6">
                     Sign In
@@ -81,7 +81,7 @@ export default function SignIn() {
 
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-all"
+                        className="w-full bg-blue-400 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-blue-500 transition-all"
                     >
                         Sign In
                     </button>
