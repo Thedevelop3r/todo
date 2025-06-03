@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { signUpFormAction } from "@/serverActions/authActions";
+import Link from 'next/link';
 
 export default function SignUp() {
     const [formState, setFormState] = useState({
@@ -36,10 +37,10 @@ export default function SignUp() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-white p-4">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-white p-4">
             <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
                 <h1 className="text-2xl font-semibold text-center text-blue-600 mb-6">
-                    Create an Account
+                    Sign Up
                 </h1>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -84,6 +85,16 @@ export default function SignUp() {
                     >
                         Sign Up
                     </button>
+                    {/* already have an account */}
+                    <p className="text-sm text-gray-600 text-center mt-4">
+                        Already have an account?{" "}
+                        <Link
+                            href="/sign-in"
+                            className="text-blue-600 hover:underline"
+                        >
+                            Sign In
+                        </Link>
+                    </p>
                 </form>
             </div>
         </div>
